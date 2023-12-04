@@ -2,7 +2,6 @@ import os
 os.system('pip install Flask ')
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
-os.chdir('C:\\Users\\mui\\Desktop\\Rens website upload')
 app = Flask(__name__)
 
 # Define the folder where uploaded files will be stored
@@ -32,8 +31,8 @@ def upload():
         # Iterate for each file in the files List, and Save them 
         for file in files: 
             file.save(file.filename) 
-        return render_template('thank_you.html')
+        return render_template('Thank_you.html')
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.0.4', port=5000)
+    app.run(host='192.168.0.12', port=5000)
