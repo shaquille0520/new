@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hed {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .black_2 {
+            position: relative;
+            background-color: #ffcc00;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.705);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .browse {
+            background-color: rgba(167, 167, 167, 0.452);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .thaks{
+            text-align: center;
+        }
+        footer {
+                text-align: center;
+                padding: 3px;
+                background-color: DarkSalmon;
+                color: white;
+                }
+                
+        @media screen and (max-width: 768px) {
+            .black_2 {
+                padding-top: 20px;
+                padding: 20px;
+                padding-bottom: 50px;
+            }
+
+            .button {
+                padding: 150px;
+            }
+
+        }
+    </style>
+    <title>LTG Upload point</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+</head>
+<body>
+    <div class="thaks">
+        <a href="{{url_for('static', filename='Thank_you.html')}}"><img  src="{{url_for('static', filename='thaks.png')}}" alt="Logo"></a>
+     </div>
+
+
+
+</body>
+
+</html>
